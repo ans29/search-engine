@@ -23,7 +23,7 @@ public class Main
     }
 
 
-    static void readFile (String fileName) throws IOException
+    static void readFile (String fileName)
     {
         Path filePath = Paths.get (fileName);
 
