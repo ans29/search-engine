@@ -1,7 +1,4 @@
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.FileChannel;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -13,17 +10,11 @@ public class Main
 {
     public static void main(String[] args)
     {
-      try
-      {
-        readFile (Constants.input_file);
-      } catch (IOException e)
-      {
-        e.printStackTrace();
-      }
+      readFile (Constants.input_file);
     }
 
 
-    static void readFile (String fileName)
+    private static void readFile(String fileName)
     {
         Path filePath = Paths.get (fileName);
 
